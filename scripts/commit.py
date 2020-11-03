@@ -9,9 +9,10 @@ def commitAndPush(message):
 
 cmd.run("git add -A", check=True, shell=True)
 
+defaultCommit = "update the repository"
+
 defaultResponse = input(
-    "Do you want to use the default message for this commit? ('update the repository') ([y]/n)\n")
-message = "update the repository"
+    f"Do you want to use the default message for this commit? ('${defaultCommit}') ([y]/n)\n")
 
 if defaultResponse.startswith('y'):
     commitAndPush(defaultResponse)
