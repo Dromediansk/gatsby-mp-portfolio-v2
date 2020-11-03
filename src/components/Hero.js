@@ -24,7 +24,7 @@ const Hero = () => {
   } = useStaticQuery(query)
 
   return (
-    <header className="hero">
+    <header className="Hero">
       <div className="section-center hero-center">
         <article className="hero-info">
           <div>
