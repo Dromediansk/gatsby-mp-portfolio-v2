@@ -11,4 +11,4 @@ if response.startswith('n'):
     message = input("What message you want?\n")
 
 cp = cmd.run(f"git commit -m '{message}'", check=True, shell=True)
-cp = cmd.run("git push", check=True, shell=True)
+cp = cmd.run("git push --set-upstream origin scripts", check=True, shell=True)
