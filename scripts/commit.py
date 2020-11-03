@@ -10,6 +10,5 @@ message = "update the repository"
 if response.startswith('n'):
     message = input("What message you want?\n")
 
-cp = cmd.run("git add .", check=True, shell=True)
 cp = cmd.run(f"git commit -m '{message}'", check=True, shell=True)
 cp = cmd.run("git push master -f", check=True, shell=True)
