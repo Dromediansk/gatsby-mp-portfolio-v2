@@ -3,7 +3,7 @@ import subprocess as cmd
 cp = cmd.run("git add -A", check=True, shell=True)
 
 response = input(
-    "Do you want to use the default message for this commit?([y]/n)\n")
+    "Do you want to use the default message for this commit? ('update the repository') ([y]/n)\n")
 message = "update the repository"
 
 if response.startswith('n'):
