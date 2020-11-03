@@ -15,11 +15,11 @@ defaultResponse = input(
     f"Do you want to use the default message for this commit? ('${defaultCommit}') ([y]/n)\n")
 
 if defaultResponse.startswith('y'):
-    commitAndPush(defaultResponse)
+    commitAndPush(defaultCommit)
 
 elif defaultResponse.startswith('n'):
-    message = input("What message you want?\n")
-    commitAndPush(message)
+    commit = input("What commit message do you want?\n")
+    commitAndPush(commit)
 else:
     correctionAnswer = input("Please provide a correct answer ([y]/n):")
     if correctionAnswer.startswith('n') or correctionAnswer.startswith('n'):
